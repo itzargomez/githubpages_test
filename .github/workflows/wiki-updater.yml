@@ -15,5 +15,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: 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
-          external_repository: itzargomez/githubpages_test.wiki.git
+          external_repository: itzargomez/githubpages_test.wiki
           publish_dir: .wiki
