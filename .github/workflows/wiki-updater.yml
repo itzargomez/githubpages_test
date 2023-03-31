@@ -1,0 +1,19 @@
+name: Update Wiki
+on:
+  workflow_dispatch:
+    inputs:
+      CONTENT:
+        description: 'Supra environments to generate manifest files'
+        required: false
+        default: ''
+jobs:
+  update-wiki:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update Wiki
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: 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
+          external_repository: itzargomez/githubpages_test.wiki.git
+          publish_dir: .wiki
