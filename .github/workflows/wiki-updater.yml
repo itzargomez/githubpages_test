@@ -14,6 +14,6 @@ jobs:
       - name: Update Wiki
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: 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
+          personal_token: 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
           external_repository: itzargomez/githubpages_test.wiki
           publish_dir: .wiki
